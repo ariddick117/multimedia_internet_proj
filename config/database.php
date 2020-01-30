@@ -6,14 +6,14 @@ class Database
 
     private $db_name = "db_movies";
 
-    private $username = "root"; 
+    private $username = "root";
 
-    private $password = ""; // root for MAC
+    private $password = "";
 
     private static $instance = null;
     public $conn;
 
-    private function __construct() {
+    private function __construct(){
         $db_dsn = array(
             'host'    => $this->host,
             'dbname'  => $this->db_name,
@@ -38,15 +38,17 @@ class Database
             );
             exit;
         }
+
     }
 
-    public static function getInstance() {
+    public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Database();
         }
 
         return self::$instance;
     }
+
     // get the database connection
     public function getConnection()
     {

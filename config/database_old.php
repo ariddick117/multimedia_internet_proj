@@ -6,9 +6,9 @@ class Database_Old
 
     private $db_name = "db_movies";
 
-    private $username = "root"; 
+    private $username = "root";
 
-    private $password = ""; // root for MAC
+    private $password = "";
 
     public $conn;
 
