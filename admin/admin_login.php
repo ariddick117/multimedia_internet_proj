@@ -1,5 +1,6 @@
 <?php
     require_once '../load.php';
+    $ip = $_SERVER['REMOTE_ADDR']; // $_UPPERCASE is a built in variable, values are assigned through your server
 
     if(isset($_POST['submit'])){
         $username = trim($_POST['username']);
@@ -7,7 +8,7 @@
 
         if(!empty($username) && !empty($password)){
             // Do the login here
-            $message = login($username, $password);
+            $message = login($username, $password, $ip);
         }else{
             $message = 'Please fill out the required fields';
         }
@@ -24,7 +25,7 @@
 </head>
 <body>
     <?php echo !empty($message)?$message: ''; ?> <!-- Shorthand if/else statement -->
-    <form action="admin_login/php" method="post">
+    <form action="admin_login.php" method="post">
         <label>Username: </label><br>
         <input type="text" name="username" value=""><br>
 
