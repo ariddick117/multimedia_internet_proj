@@ -15,6 +15,9 @@
     <h2>Welcome, <?php echo $_SESSION['user_name']; ?>!</h2>
 
     <a href="admin_createuser.php">Create User</a>
+    <br>
+    <a href="admin_edituser.php">Edit User</a>
+    <br>
     <a href="admin_logout.php">Sign Out</a>
 </body>
 </html>
