@@ -18,6 +18,8 @@
     <br>
     <a href="admin_edituser.php">Edit User</a>
     <br>
+    <a href="admin_deleteuser.php">Delete User</a>
+    <br>
     <a href="admin_logout.php">Sign Out</a>
 </body>
 </html>
