@@ -20,6 +20,8 @@
     <br>
     <a href="admin_deleteuser.php">Delete User</a>
     <br>
+    <a href="admin_addmovie.php">Add Movie</a>
+    <br>
     <a href="admin_logout.php">Sign Out</a>
 </body>
 </html>
